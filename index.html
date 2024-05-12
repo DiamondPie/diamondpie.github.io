@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Disable cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./asset/iconfont/iconfont.css">
+    <title>MusicPlayer by DiamondPie</title>
+    <style>
+        .visualizer-container {
+            position: absolute;
+            white-space: nowrap;
+            overflow: hidden;
+            bottom: 5px;
+            right: 0;
+            left: 0;
+
+            text-align: center;
+        }
+
+        .visualizer-container__bar {
+            transition: height 0.06s ease;
+            display: inline-block;
+            background: rgba(254, 248, 244, 0.7);
+            margin: 0 2px;
+            width: 25px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="visualizer-container"></div>
+    <div class="music-player-wrapper">
+        <div class="music-player">
+            <!-- Default -->
+            <audio id="audio" crossorigin="anonymous" preload="auto"></audio>
+            <div class="top-bar">
+                <span class="iconfont icon-24gl-volumeHigh mute"></span>
+                <span class="volume-prompt">Full</span>
+                <div class="progress-bar sound-progress-bar">
+                    <span class="duration-bar sound-duration"></span>
+                    <span class="progress sound-progress">
+                        <span class="round"></span>
+                    </span>
+                </div>
+                <span class="iconfont icon-lyric"></span>
+            </div>
+            <div class="music-info">
+                <div class="info-left">
+                    <img class="music-img active-transition" src="./asset/bj/default.jpg" alt="" style="height: 180px" draggable="false">
+                    <div class="lyric-mask">
+                        <div class="lyric-wrapper">
+                            <ul id="lyc-content"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-right">
+                    <div class="music-name">
+                        <span class="name">Loading....</span>
+                        <span class="musician">Loading</span>
+                    </div>
+                    <div class="playback-setting">
+                        <span class="iconfont icon-like like not-main" style="display:none"></span>
+                        <span class="iconfont icon-next previous"></span>
+                        <span class="iconfont icon-bofang"></span>
+                        <span class="iconfont icon-zanting"></span>
+                        <span class="iconfont icon-next next"></span>
+                        <span class="iconfont icon-order mode not-main" style="display:none"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar player-progress-bar">
+                <span class="duration-bar play-duration"></span>
+                <span class="progress player-progress"></span>
+                <span class="time">Loading...</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./lyc.js"></script> <!-- Lyrics File -->
+<script src="./musics.js"></script> <!-- Music Data -->
+<script>
+    // pre-defined dom elements
+    const audio = document.getElementById('audio')
+    audio.crossOrigin = 'anonymous'
+    const visualizerContainer = document.querySelector('.visualizer-container')
+    const playBtn = document.querySelector('.icon-bofang')
+    const zanTingBtn = document.querySelector('.icon-zanting')
+    const previousBtn = document.querySelector('.previous')
+    const nextBtn = document.querySelector('.next')
+    const likeBtn = document.querySelector('.like')
+    const modeBtn = document.querySelector('.mode')
+    const playBackSetting = document.querySelector('.playback-setting')
+    const playerProgress = document.querySelector('.player-progress')
+    const timeStr = document.querySelector('.time')
+    const playDurationBar = document.querySelector('.play-duration')
+    const soundDuration = document.querySelector('.sound-duration')
+    const soundProgress = document.querySelector('.sound-progress')
+    const round = document.querySelector('.round')
+    const playerProgressBar = document.querySelector('.player-progress-bar')
+    const soundProgressBar = document.querySelector('.sound-progress-bar')
+    const musicImg = document.querySelector('.music-img')
+    const musician = document.querySelector('.musician')
+    const musicName = document.querySelector('.name')
+    // lyric scroll wrapper
+    const lycContent = document.getElementById('lyc-content')
+    const lyricWrapper = document.querySelector('.lyric-wrapper')
+    const lycShow = document.querySelector('.icon-lyric')
+    const musicInfo = document.querySelector('.music-info')
+    const infoLeft = document.querySelector('.info-left')
+    const lyricMask = document.querySelector('.lyric-mask')
+    const mute = document.querySelector('.mute')
+    const volumePrompt = document.querySelector('.volume-prompt')
+
+    let showLycFlag = false
+    var playing = false
+
+    // global variables
+    let nowPlayIndex = 0
+    var timeArr = []
+    var heightVectorConstant = 0
+    var playingMode = 0 // 0: Playing in order | 1: Infinite Loop | 2: Playing randomly
+    var isMute = false
+    var volumeCache
+    var randomPlayList = []
+
+    // get lyrics (from lyc.js under the same directory)
+    function setLrc(nowPlayIndex) {
+        timeArr = []
+        let lrcArr = []
+        let insertLrcStr = ''
+        const str = lyricStr[nowPlayIndex] ? lyricStr[nowPlayIndex].split('\n') : ['[00:00.00]This is a pure music, enjoy!', '[999:99.99]这首歌为纯音乐，请欣赏！']
+        str.forEach(item => {
+            const splitLyc = item.split(']')
+            // console.log(splitLyc[0].substr(1, splitLyc[0].length -1))
+            timeArr.push(timeFormat(splitLyc[0].substr(1, splitLyc[0].length -1)))
+            lrcArr.push(splitLyc[1])
+            insertLrcStr += `<li>${lrcArr[lrcArr.length - 1]}</li>`
+        })
+        lycContent.innerHTML = insertLrcStr
+        // duration = audio.duration
+    }
+    
+    // As time goes on, scroll lyrics
+    audio.addEventListener('timeupdate', function() {
+        console.log("Audio CurrentTime", audio.currentTime)
+        lycSlide()
+    }, true)
+
+    // Scroll lyrics normally, mark the current lyric which is playing
+    function lycSlide() {
+        let index = binarySearch(timeArr, parseFloat(audio.currentTime.toFixed(2)))
+        // Prevent the lyric from deviating
+        lycContent.style.top = index * -(heightVectorConstant+10) + 180 + 'px';
+        // index * -(heightVectorConstant+10) + 180 - parseFloat(lycContent.style.top) !== slideHeightDelta ? console.log("Slided! HeightDelta", slideHeightDelta) : null; // This is a debugger
+        [...lycContent.children].forEach(item => {
+            item.textContent = item.textContent.replaceAll("♪", "")
+            item.className = ''
+        })
+        heightVectorConstant = lycContent.children[lycContent.children[index+1] ? index : index-1].getBoundingClientRect().height
+        lycContent.children[index].className = 'active'
+        lycContent.children[index].textContent = `♪ ${lycContent.children[index].textContent} ♪`
+    }
+
+    // Convert time string to time (in sec)
+    function timeFormat(timeStr) {
+        if(timeStr) {
+            const timeStrArr = timeStr.split(':')
+            const minute = timeStrArr[0][0] == '0' ? timeStrArr[0][1] : timeStrArr[0]
+            const second = timeStrArr[1][0] == '0' ? timeStrArr[1].slice(1) : timeStrArr[1]
+            return parseInt(minute) * 60 + parseFloat(second)
+        }
+    }
+
+    // Binary search for the nearest lyric
+    function binarySearch(arr, target, left = 0, right = arr.length -1) {
+        if(left > right) return left -1 
+        const mid = Math.floor((left + right) / 2)
+        if(arr[mid] === target) return mid
+
+        return arr[mid] > target ? 
+            binarySearch(arr, target, left, mid - 1) : 
+            binarySearch(arr, target, mid + 1, right)
+    }
+
+    // handle the progress bar
+    function timeAndProgress() {
+        playerProgress.style.width = audio.currentTime / audio.duration * 100 + '%'
+        let time = audio.duration - audio.currentTime
+        let minue = parseInt(time / 60)
+        let second = parseInt(time % 60)
+        let str = isNaN(minue) && isNaN(second) ?
+            'Loading ...' :
+            `${minue < 10 ? '0' + minue : minue}:${second < 10 ? '0' + second : second}`
+        timeStr.innerHTML = str
+        lycSlide()
+    }
+
+    // set audio & background image
+    function setMusic(index, autoPlay=true) {
+        setLrc(index)
+        musicImg.src = musicList[index].musicPic ? musicList[index].musicPic : "./asset/bj/default.jpg"
+        audio.src = musicList[index].musicSrc
+        musician.innerHTML = musicList[index].musician
+        musicName.innerHTML = musicList[index].musicName
+        if (autoPlay) playMusic()
+        likeBtn.style.color = "#fff"
+    }
+
+    // play the current music
+    function playMusic() {
+        audio.play()
+        playBtn.style.display = 'none'
+        zanTingBtn.style.display = 'block'
+        playing = true;
+    }
+
+    // pause the current music
+    function pauseMusic() {
+        audio.pause()
+        playBtn.style.display = 'block'
+        zanTingBtn.style.display = 'none'
+        playing = false;
+    }
+
+    // jump to previous music
+    function previousMusic() {
+        if (nowPlayIndex == 0) {
+            nowPlayIndex = musicList.length - 1
+        } else {
+            nowPlayIndex--
+        }
+        setMusic(nowPlayIndex)
+    }
+
+    // jump to next music
+    function nextMusic() {
+        nowPlayIndex == musicList.length-1 ? nowPlayIndex = 0 : nowPlayIndex++
+        setMusic(nowPlayIndex)
+    }
+
+    // pull a random index array 
+    // returns an array shuffled from interval [0, musicList.length)
+    function getRandomIndexList() {
+        let array = Array.from({length: musicList.length}, (_, index) => index);
+
+        for (var i = array.length - 1; i > 0; i--) {
+            var randomIndex = Math.floor(Math.random() * (i + 1));
+            
+            var temp = array[i];
+            array[i] = array[randomIndex];
+            array[randomIndex] = temp;
+        }
+        
+        return array;
+    }
+
+    // get a random music
+    function randomMusic() {
+        if (randomPlayList.length === 0) randomPlayList = getRandomIndexList();
+
+        // 废除代码：此方法会导致某些歌曲被重复或忽略播放
+        // let previousIndex = nowPlayIndex
+        // do { nowPlayIndex = Math.floor(Math.random() * musicList.length) } while (nowPlayIndex === previousIndex);
+
+        setMusic(randomPlayList.pop());
+    }
+
+    // show/hide lyrics
+    lycShow.addEventListener('click', function() {
+        if (!showLycFlag) {
+            playBackSetting.querySelectorAll('.not-main').forEach(function (child) {
+                child.style.display = 'flex'
+            })
+            lycShow.style.color = "rgb(133, 153, 245)"
+            musicImg.classList.add('active-transition')
+            lyricMask.classList.add('lyric-active-transition')
+            musicImg.style.height = '420px'
+            musicInfo.style.display = 'block'
+            lyricMask.style.opacity = '1'
+            infoLeft.style.width = '100%'
+            showLycFlag = true
+        } else {
+            playBackSetting.querySelectorAll('.not-main').forEach(function (child) {
+                child.style.display = 'none'
+            })
+            lycShow.style.color = "rgb(255, 255, 255)"
+            musicImg.classList.remove('active-transition')
+            lyricMask.classList.remove('lyric-active-transition')
+            musicImg.style.height = '180px'
+            musicInfo.style.display = 'flex'
+            lyricMask.style.opacity = '0'
+            infoLeft.style.width = '40%'
+            showLycFlag = false
+        }
+    })
+
+    // Initialize after first loaded
+    window.onload = function () {
+        let params = new URLSearchParams(window.location.search)
+        params.get("darkmode") ? document.body.style.backgroundImage = "none" : null
+        setLrc(nowPlayIndex)
+        // duration = audio.duration'
+        setMusic(nowPlayIndex, false)
+        setInterval(timeAndProgress, 500)
+    }
+
+    // When a music played done, swap to next music
+    audio.addEventListener("ended", function () {
+        switch (playingMode) {
+            case 0:
+                nextMusic()
+                break
+            case 1:
+                setMusic(nowPlayIndex)
+                break
+            case 2:
+                randomMusic()
+                break
+        } 
+    })
+
+    // Change number of volume when the volume changes
+    audio.addEventListener("volumechange", function () {
+        let v = Math.round(audio.volume * 100)
+        volumePrompt.innerText = v === 100 ? 'Full' : v
+        mute.classList.value = 'iconfont mute'
+        if (v <= 100 && v >= 70) {
+            mute.classList.add('icon-24gl-volumeHigh')
+        }
+        else if (v < 70 && v >= 30) {
+            mute.classList.add('icon-24gl-volumeMiddle')
+        }
+        else if (v < 30 && v > 0) {
+            mute.classList.add('icon-24gl-volumeLow')
+        }
+        else {
+            mute.classList.add('icon-24gl-volumeDisable')
+        }
+    })
+
+    // 点击进度条更改播放进度
+    playerProgressBar.addEventListener("click", function (e) {
+        console.log(this.classList)
+        audio.currentTime = e.offsetX / this.offsetWidth * audio.duration
+        console.log(`Change progress!\ne.offsetX: ${e.offsetX}\nthis.offsetWidth: ${this.offsetWidth}\nduration: ${audio.duration}\nCurrentTime: ${audio.currentTime}`)
+        timeAndProgress()
+    })
+
+    // 声音拖动
+    soundProgressBar.addEventListener('mousedown', function () {
+        let soundBarLength = soundProgressBar.offsetWidth
+
+        // 鼠标移动
+        document.onmousemove = function (ev) {
+            isMute = false
+            let myEvent = ev || event
+            let disX = myEvent.clientX - soundProgressBar.getBoundingClientRect().left
+            if (disX > soundBarLength) {
+                disX = soundBarLength
+            } else if (disX == 0) {
+                disX = 0
+            }
+            let progressFloat = disX / soundBarLength > 0 ?
+                disX / soundBarLength : 0
+            soundProgress.style.width = progressFloat * 100 + '%'
+            audio.volume = progressFloat
+        }
+        
+
+        // 鼠标抬起
+        document.onmouseup = function () {
+            document.onmousemove = null
+            document.onmouseup = null
+        }
+    })
+    
+    // 显示歌词
+
+
+    // 播放
+    playBtn.addEventListener('click', function () {
+        playMusic()
+    })
+
+    // 暂停
+    zanTingBtn.addEventListener('click', function () {
+        pauseMusic()
+    })
+
+    // 上一首歌
+    previousBtn.addEventListener('click', function () {
+        previousMusic()
+    })
+
+    // 下一首歌
+    nextBtn.addEventListener('click', function () {
+        nextMusic()
+    })
+
+    // 点赞 （制作中）
+    likeBtn.addEventListener('click', function () {
+        likeBtn.style.color = likeBtn.style.color === 'rgb(255, 105, 105)' ? 'rgb(255, 255, 255)' : 'rgb(255, 105, 105)'
+    })
+
+    // 切换模式
+    modeBtn.addEventListener('click', function () {
+        playingMode === 2 ? playingMode = 0 : playingMode++
+        switch (playingMode) {
+            case 0:
+                modeBtn.className = 'iconfont icon-order mode not-main'
+                break
+            case 1:
+                modeBtn.className = 'iconfont icon-loop mode not-main'
+                break
+            case 2:
+                modeBtn.className = 'iconfont icon-random mode not-main'
+                break
+        }
+    })
+
+    // Mute button
+    mute.addEventListener('click', function() {
+        isMute = !isMute
+        console.log(isMute ? 'muted' : 'unmuted')
+        if (isMute) {
+            volumeCache = audio.volume
+            audio.volume = 0
+        }
+        else {
+            audio.volume = volumeCache
+        }
+        soundProgress.style.width = audio.volume * 100 + '%'
+    })
+
+    // Use space to play/pause music
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space') {
+            playing ? pauseMusic() : playMusic();
+        } else if (event.keyCode === 37) {
+            previousMusic()
+        } else if (event.keyCode === 39) {
+            nextMusic()
+        }
+    });
+
+</script>
+<script src="./visualize.js"></script>
+
+</html>
