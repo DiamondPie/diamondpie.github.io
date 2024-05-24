@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide-in Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .notification {
+            position: fixed;
+            right: -350px;
+            top: 90%;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: right 0.5s cubic-bezier(0, 0, 0, 1.35);
+            z-index: 1000;
+        }
+        .show {
+            right: -30px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="showNotification('Hello, world!', 3000)">Show Notification</button>
+<script>
+    var notificationNum = 0;
+    function showNotification(message, displayTime) {
+        const notification = document.createElement('div');
+        notification.textContent = message;
+        notification.classList.add('notification');
+
+        notification.style.top = `${window.innerHeight - 80*(notificationNum+1)}px`;
+        console.log(notification.style.top);
+        notificationNum++;
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                notification.classList.add('show');
+                observer.unobserve(notification);
+            });
+        });
+
+        document.body.appendChild(notification);
+
+        observer.observe(notification);
+      
+        setTimeout(() => {
+            notification.classList.remove('show');
+            observer.unobserve(notification);
+            observer.disconnect();
+            notification.addEventListener('transitionend', () => {
+              document.body.removeChild(notification);
+              notificationNum--;
+            })
+        }, displayTime);
+    }
+
+    // 示例：显示提示窗口，显示时间为3秒（3000毫秒）
+    // showNotification('你好，这是一条通知消息！', 3000);
+</script>
+
+</body>
+</html>
