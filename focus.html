@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Window Blur Alert</title>
     <script>
+        var lostFocus = false;
         // 监听窗口失去焦点事件
         window.addEventListener('blur', function() {
+            if (lostFocus) return;
+            lostFocus = true;
             alert('检测到切出');
+            lostFocus = false;
         });
 
         window.addEventListener('visibilitychange', function() {
+            if (lostFocus) return;
+            lostFocus = true;
             alert('检测到切出');
+            lostFocus = false;
         })
     </script>
 </head>
