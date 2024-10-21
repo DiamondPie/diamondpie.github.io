@@ -98,7 +98,31 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: anzhiyu
 
+plugins:
+  - hexo-algoliasearch
+
+markdown:
+  plugins:
+    - "@renbaoshuo/markdown-it-katex"
+    
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# algolia搜索: https://github.com/LouisBarranqueiro/hexo-algoliasearch
+algolia:
+  appId: "4GMH0C8I4E"
+  apiKey: "ad131ca8235f044c965f59b7467c3ca2"
+  adminApiKey: "7f21aa6e369258de29791b54e161e013"
+  chunkSize: 5000
+  indexName: "hexo"
+  fields:
+    - content:strip:truncate,0,200
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
