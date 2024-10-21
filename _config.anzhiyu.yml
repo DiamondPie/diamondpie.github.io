@@ -73,7 +73,7 @@ social:
 author_status:
   enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
-  statusImg: "https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/doge.png"
+  statusImg: "/img/doge.png"
   skills:
     - 🤖️ 数码科技爱好者
     - 🔍 分享与热心帮助
@@ -140,7 +140,7 @@ favicon: /favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/default_avatar.jpg # https://utils.tiiny.io
+  img: /img/default_avatar.jpg # https://utils.tiiny.io
   effect: false
 
 # Disable all banner image
@@ -162,7 +162,7 @@ cover:
   position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    - https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/default_cover.png
+    - /img/default_cover.png
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -314,12 +314,12 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: # Twikoo/Waline
+  use: Twikoo
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
-  count: false # Display comment count in post's top_img
+  count: true # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
 # valine
@@ -360,9 +360,9 @@ waline:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://diamondpie-twikoo.hf.space
   region:
-  visitor: false
+  visitor: true
   option:
 
 # Artalk
@@ -396,7 +396,7 @@ giscus:
 chat_btn: false
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: false
+chat_hide_show: true
 
 # chatra
 # https://chatra.io/
@@ -792,7 +792,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/default_avatar.jpg # 自定加载动画义头像
+  avatar: /img/default_avatar.jpg # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
