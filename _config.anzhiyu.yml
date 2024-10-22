@@ -35,7 +35,7 @@ nav:
       item:
         - name: 我的个人主页
           link: https://diamondpie.is-best.net
-          icon: https://diamondpie.is-best.net/favicon.ico
+          icon: /img/default_avatar.jpg
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
