@@ -246,10 +246,10 @@ post_copyright:
 reward:
   enable: false
   QR_code:
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+    - img:
       link:
       text: 微信
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+    - img:
       link:
       text: 支付宝
 
@@ -1014,7 +1014,7 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之间添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
 
 # Lazyload (图片懒加载)
@@ -1051,21 +1051,21 @@ css_prefix: true
 home_top:
   enable: true # 开关
   timemode: date #date/updated
-  title: 生活明朗
-  subTitle: 万物可爱。
-  siteText: diamondpie
+  title: 人生苦短，
+  subTitle: 我学Python
+  siteText: The Lost Diamond Pie
   category:
-    - name: 前端
-      path: /categories/前端开发/
+    - name: 项目开发
+      path: /categories/项目开发/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 大学
-      path: /categories/大学生涯/
+    - name: 学校生活
+      path: /categories/学校生活/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
-    - name: 生活
+    - name: 生活日常
       path: /categories/生活日常/
       shadow: var(--anzhiyu-shadow-green)
       class: green
