@@ -6,6 +6,8 @@ top_img: false
 aside: false
 ---
 
+`中文` | [English](/cookies/en)
+
 ## 更新日期
 
 本政策的最近更新日期为：`2024-10-24`
