@@ -1,6 +1,5 @@
 menu:
   文章:
-    隧道: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
 
@@ -29,7 +28,7 @@ nav:
     - title: 网页
       item:
         - name: 博客
-          link: https://blog.anheyu.com/
+          link: https://diamondpie.github.io/
           icon: /img/favicon.ico
     - title: 项目
       item:
@@ -152,6 +151,10 @@ index_img: "background: url('https://raw.githubusercontent.com/DiamondPie/SomeSo
 # If the banner of page not setting, it will show the top_img
 default_top_img: "background: url('https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/index_img.jpg') top / cover no-repeat"
 
+category_img: https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/covers/developing.jpg
+category_per_img:
+  项目开发: https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/covers/developing.jpg
+
 cover:
   # display the cover or not (是否显示文章封面)
   index_enable: true
@@ -256,10 +259,10 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit: # 目前仅可选择一个平台在线编辑
-  enable: false
+  enable: true
   # github: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  github: false
+  github: https://github.com/DiamondPie/diamondpie.github.io/edit/main/source/
 
   # yuque: https://www.yuque.com/user-name/repo-name/
   # 示例: https://www.yuque.com/yuque/yuque/
@@ -393,7 +396,7 @@ giscus:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: true
@@ -401,7 +404,7 @@ chat_hide_show: true
 # chatra
 # https://chatra.io/
 chatra:
-  enable: false
+  enable: true
   id: FwfK3YXKRt2qtNk4N
 
 # tidio
@@ -444,7 +447,7 @@ footer:
       - link: https://hexo.io/ #徽标指向网站链接
         shields: https://img.shields.io/badge/Frame-Hexo-0C679B #徽标API
         message: 博客框架为Hexo_v5.4.0 #徽标提示语
-      - link: https://blog.anheyu.com/
+      - link: https://docs.anheyu.com/
         shields: https://img.shields.io/badge/Theme-AnZhiYu-2C56A3
         message: 本站使用AnZhiYu主题
       # - link: https://www.dogecloud.com/
@@ -855,7 +858,7 @@ aside:
 busuanzi:
   site_uv: false
   site_pv: false
-  page_pv: false
+  page_pv: true
 
 # Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -1115,15 +1118,15 @@ diytitle:
 
 # 留言弹幕配置
 comment_barrage_config:
-  enable: false
+  enable: true
   # 同时最多显示弹幕数
   maxBarrage: 1
   # 弹幕显示间隔时间ms
   barrageTime: 4000
   # token，在控制台中获取
-  accessToken: ""
+  accessToken: "ce2a17762cbd157c6a806d986c0d0626"
   # 博主邮箱md5值
-  mailMd5: ""
+  mailMd5: "6173e92e1481e39dadbd0fe95225e095"
 
 # 左下角音乐配置项
 # https://github.com/metowolf/MetingJS
@@ -1216,7 +1219,7 @@ pageThumbnailSuffix: ""
 
 # 隐私协议弹窗
 agreementPopup:
-  enable: false
+  enable: true
   url: /privacy
 
 # 右键菜单

@@ -1,7 +1,7 @@
 ---
 title: Testing mathematic formulas
 date: 2024-10-21 17:09:20
-tags:
+tags: test
 katex: true
 ---
 # 这是一个数学公式测试页面
