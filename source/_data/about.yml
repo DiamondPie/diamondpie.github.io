@@ -50,15 +50,15 @@
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 2008
-    selfInfoTips2: 湖南信息学院
-    selfInfoContent2: 软件工程
+    selfInfoTips2: 当前坐标
+    selfInfoContent2: 新西兰
     selfInfoTips3: 现在职业
-    selfInfoContent3: 高中生👨‍🎓
+    selfInfoContent3: 高中生👨‍🦱
   personalities:
     author_name: 探险家
     personality_type: ISFP-T
     personality_type_color: "#E4AE3A"
-    photo_url: https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/covers/developing.jpg
+    photo_url: /img/about/developing.jpg
     personality_img: https://www.16personalities.com/static/images/personality-types/avatars/isfp-adventurer-male.svg
     name_url: https://www.16personalities.com/ch/isfp-%E4%BA%BA%E6%A0%BC
   maxim:
@@ -70,34 +70,34 @@
     buff_top: 嗜睡 能从假期开始冬眠到结束
     buff_bottom: 睡眠质量 雷打不动
   game:
-    game_tips: 爱好游戏
-    game_title: 原神
-    game_uid: "UID: 125766904"
-    game_bg: https://bu.dusays.com/2023/04/22/64433bf26e25d.webp
+    game_tips: 陪了我8年的游戏
+    game_title: Minecraft
+    game_uid: 我的正版ID：Synchronized1145
+    game_bg: /img/about/minecraft_cover.jpg
   comic:
-    comic_tips: 爱好番剧
-    comic_title: 追番
+    comic_tips: 喜欢的UP主
+    comic_title: At Bilibili
     comic_list:
-      - name: 约定的梦幻岛
-        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/27/647166c44b414.webp
-      - name: 咒术回战
-        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db4398832e.webp
-      - name: 紫罗兰永恒花园
-        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db43983d99.webp
-      - name: 鬼灭之刃
-        href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db439856a0.webp
-      - name: JOJO的奇妙冒险 黄金之风
-        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/30/64760e38d651a.webp
+      - name: 我叫小渔人
+        href: https://space.bilibili.com/256237759
+        cover: https://wsrv.nl/?url=i1.hdslb.com/bfs/face/590e1bbd098493c86038a94ce240bf80d627a760.jpg&w=300&h=300&fit=fill
+      - name: 中楠先生胡言乱语
+        href: https://space.bilibili.com/35095918
+        cover: https://wsrv.nl/?url=i1.hdslb.com/bfs/face/b97afc6cdae1faf09272fe7949ecf940902df4d0.jpg&w=300&h=300&fit=fill
+      - name: 大炒面制造者Cen
+        href: https://space.bilibili.com/14890801
+        cover: https://wsrv.nl/?url=i1.hdslb.com/bfs/face/ddbd161cff620238122005fdbe232668c4e964ab.jpg&w=300&h=300&fit=fill
+      - name: 小陈在农村
+        href: https://space.bilibili.com/590842316
+        cover: https://wsrv.nl/?url=i2.hdslb.com/bfs/face/2461dc7a505a666d71cc64dd3811b1de6cfe5fea.jpg&w=300&h=300&fit=fill
+      # - name: JOJO的奇妙冒险 黄金之风
+      #   href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+      #   cover: https://bu.dusays.com/2023/05/30/64760e38d651a.webp
   like:
     like_tips: 关注偏好
-    like_title: 数码科技
-    like_bg: https://bu.dusays.com/2022/12/06/638f5f05ce1f7.jpg
-    like_bottom: 手机、电脑软硬件
+    like_title: 网络安全
+    like_bg: /img/about/code.jpg
+    like_bottom: 网络攻防，CTF，数据安全
   music:
     music_tips: 音乐偏好
     music_title: 许嵩、民谣、华语流行

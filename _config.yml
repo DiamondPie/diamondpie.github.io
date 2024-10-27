@@ -126,3 +126,9 @@ algolia:
     - slug
     - tags
     - title
+
+# APlayer
+# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+aplayer:
+  meting: false
+  asset_inject: false

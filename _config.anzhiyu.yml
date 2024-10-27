@@ -128,7 +128,7 @@ mathjax:
 # KaTeX
 katex:
   enable: true
-  per_page: true
+  per_page: false
   hide_scrollbar: true
 
 # Image (图片设置)
@@ -259,10 +259,11 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit: # 目前仅可选择一个平台在线编辑
-  enable: true
+  enable: false
   # github: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   github: https://github.com/DiamondPie/diamondpie.github.io/edit/main/source/
+  # url: https://github.com/DiamondPie/diamondpie.github.io/edit/main/source/
 
   # yuque: https://www.yuque.com/user-name/repo-name/
   # 示例: https://www.yuque.com/yuque/yuque/
@@ -450,7 +451,7 @@ footer:
       - link: https://docs.anheyu.com/
         shields: https://img.shields.io/badge/Theme-AnZhiYu-2C56A3
         message: 本站使用AnZhiYu主题
-      - link: https://https://github.com/DiamondPie/diamondpie.github.io/
+      - link: https://github.com/DiamondPie/diamondpie.github.io/
         shields: https://img.shields.io/badge/Source-Github-C92BCE
         message: 所有源码（包括配置）已托管到Github
       - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -1139,13 +1140,13 @@ comment_barrage_config:
 nav_music:
   enable: false
   console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
-  id: 8152976493
-  server: netease
+  id:
+  server:
   volume: 0.7 # 默认音量
-  all_playlist: https://y.qq.com/n/ryqq/playlist/8802438608
+  all_playlist:
 
 # 路径为 /music 的音乐页面默认加载的歌单 1. nav_music 2. custom
-music_page_default: nav_music
+music_page_default: custom
 
 # 评论匿名邮箱
 visitorMail:

@@ -8,7 +8,7 @@ categories: 项目开发
 ---
 今天打算使用**Hugging Face**部署个评论系统，可是我刚提的Space一直卡在**building**状态，这正常嘛？
 
-![building](https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/covers/20241021_1.png)
+![20241021_1.png](https://s2.loli.net/2024/10/25/q6mKPdJQxs4DkGt.png)
 
 这下整个评论系统瘫痪了，浏览数啥的也都没法用，呃呃呃呃（玉哭）QAQ
 
