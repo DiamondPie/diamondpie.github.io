@@ -135,9 +135,9 @@
     {
         "name": "Weavers",
         "artist": "Feint",
-        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.0/Weavers/Weavers.mp3",
-        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.0/Weavers/Weavers.jpg",
-        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.0/Weavers/Weavers.lrc"
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.2/Weavers/Weavers.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.2/Weavers/Weavers.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.2/Weavers/Weavers.lrc"
     },
     {
         "name": "Anatomy",
@@ -145,5 +145,12 @@
         "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.0/Anatomy/Anatomy.mp3",
         "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.0/Anatomy/Anatomy.jpg",
         "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.0/Anatomy/Anatomy.lrc"
+    },
+    {
+        "name": "Xenogenesis",
+        "artist": "TheFatRat",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.1/Xenogenesis/Xenogenesis.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.1/Xenogenesis/Xenogenesis.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.1/Xenogenesis/Xenogenesis.lrc"
     }
 ]

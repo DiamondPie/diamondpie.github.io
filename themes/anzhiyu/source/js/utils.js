@@ -916,7 +916,10 @@ const anzhiyu = {
     });
     anMusicRefreshBtn.addEventListener("click", () => {
       localStorage.removeItem("musicData");
-      anzhiyu.snackbarShow("已移除相关缓存歌曲");
+      anzhiyu.snackbarShow("已移除相关缓存歌曲，页面正在自动刷新...");
+      setTimeout(() => {
+        location.reload();
+      }, 1500);
     });
     anMusicSwitchingBtn.addEventListener("click", () => {
       // anzhiyu.changeMusicList();

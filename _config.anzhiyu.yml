@@ -175,8 +175,8 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: "You found a black hole"
-  background: https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/404.gif
+  subtitle: "啊嘞？页面不见了？"
+  background: /img/page/404.jpg
 
 post_meta:
   page: # Home Page
@@ -1150,7 +1150,7 @@ music_page_default: custom
 
 # 评论匿名邮箱
 visitorMail:
-  enable: true
+  enable: false
   mail: ""
 
 # ptool 文章底部工具
