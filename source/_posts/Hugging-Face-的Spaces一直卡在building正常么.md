@@ -2,7 +2,7 @@
 title: Hugging Face 的Spaces一直卡在building正常么
 date: 2024-10-21 22:00:03
 updated: 2024-10-22 18:22:00
-tags:
+tags: Blog
 cover: https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/covers/20241021_1.png
 categories: 项目开发
 ---

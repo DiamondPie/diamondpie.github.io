@@ -152,5 +152,12 @@
         "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.1/Xenogenesis/Xenogenesis.mp3",
         "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.1/Xenogenesis/Xenogenesis.jpg",
         "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.1/Xenogenesis/Xenogenesis.lrc"
+    },
+    {
+        "name": "On My Way",
+        "artist": "Alan Walker",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.3/On-My-Way/On-My-Way.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.3/On-My-Way/On-My-Way.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.3/On-My-Way/On-My-Way.lrc"
     }
 ]
