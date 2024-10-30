@@ -829,12 +829,12 @@ const anzhiyu = {
           anzhiyu.changeMusicBg();
 
           // 暂停nav的音乐
-          if (
-            document.querySelector("#nav-music meting-js").aplayer &&
-            !document.querySelector("#nav-music meting-js").aplayer.audio.paused
-          ) {
-            anzhiyu.musicToggle();
-          }
+          // if (
+          //   document.querySelector("#nav-music meting-js").aplayer &&
+          //   !document.querySelector("#nav-music meting-js").aplayer.audio.paused
+          // ) {
+          //   anzhiyu.musicToggle();
+          // }
         }
       }, 100);
     }
@@ -851,10 +851,10 @@ const anzhiyu = {
     if (urlParams.get("id") && urlParams.get("server")) {
       const id = urlParams.get("id");
       const server = urlParams.get("server");
-      anMusicPageMeting.innerHTML = `<meting-js id="${id}" server=${server} type="playlist" type="playlist" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
+      anMusicPageMeting.innerHTML = `<meting-js id="${id}" server=${server} type="playlist" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
     } else {
       // anMusicPageMeting.innerHTML = `<meting-js id="${userId}" server="${userServer}" type="playlist" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
-      anMusicPageMeting.innerHTML = `<meting-js id="${userId}" server="${userServer}" type="playlist" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
+      anMusicPageMeting.innerHTML = `<meting-js id="${userId}" server="${userServer}" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
     }
     anzhiyu.changeMusicBg(false);
   },
@@ -984,6 +984,7 @@ const anzhiyu = {
         // 否则重新从服务器获取数据
         const response = await fetch("/json/music.json");
         songs = await response.json();
+        console.log("music data:", songs)
         cacheData.timestamp = currentTime;
         cacheData.songs = songs;
         localStorage.setItem("musicData", JSON.stringify(cacheData));

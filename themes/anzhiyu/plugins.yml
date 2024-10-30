@@ -164,9 +164,9 @@ aplayer_js:
   file: js/APlayer.min.js
   version: 1.0.1
 meting_js:
-  name: hexo-anzhiyu-music
-  file: assets/js/Meting2.min.js
-  version: 1.0.1
+  name: dpblog-static
+  file: meting/Meting2.min.js
+  version: 1.0.2
 prismjs_js:
   name: prismjs
   file: prism.js
