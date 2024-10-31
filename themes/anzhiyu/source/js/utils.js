@@ -922,7 +922,7 @@ const anzhiyu = {
       }, 1500);
     });
     anMusicSwitchingBtn.addEventListener("click", () => {
-      // anzhiyu.changeMusicList();
+      anzhiyu.changeMusicList();
     });
 
     // 默认加载的歌单
