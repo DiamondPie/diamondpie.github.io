@@ -153,12 +153,12 @@ flickr_justified_gallery_css:
   file: dist/fjGallery.css
   version: 2.1.2
 aplayer_css:
-  # name: anzhiyu-theme-static
-  # file: aplayer/APlayer.min.css
-  # version: 1.0.0
-  name: dpblog-static
+  name: anzhiyu-theme-static
   file: aplayer/APlayer.min.css
-  version: 1.0.1
+  version: 1.0.0
+  # name: dpblog-static
+  # file: aplayer/APlayer.min.css
+  # version: 1.0.1
 aplayer_js:
   name: anzhiyu-blog-static
   file: js/APlayer.min.js
