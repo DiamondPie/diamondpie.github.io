@@ -4,14 +4,14 @@ date: 2024-10-30 09:13:15
 tags: [11CPS, Revision]
 categories: 学习笔记
 comments: false
-cover: https://lh3.googleusercontent.com/P9wwRYydLo33KZCymGWvzAxLtXWfc82RnpAcIsaw_N5zdQ-uCleKexJzRANEubHquDcjfMY6OqistVPACAV0h18=w16383
+cover: https://i.postimg.cc/nhjJqTsk/MCert-CPS-sites-banner.png
 copyright: false
 copyright_author: 1
 ---
 
 ## Overview
 
-{% note info flat %}**2 hour** written paper{% endnote %}
+{% note info flat %}**2 hour** written paper, at **11.8 Friday**. Past Paper [Here](https://docs.google.com/document/d/1MpjyMvrO1Nw8hCA0ZPG84lbrC1J5UWmMXPflfA7uWZ4){% endnote %}
 
 ### Section A: *60 marks*
 
@@ -27,36 +27,48 @@ Decimals to Binary **conversion** (bit dependant)
 
 {% folding cyan, Encoding & Compression: (25') %}
 
-ASCII encoding - To and from 
-File size calculation (Text and Audio)
-File compression 
-Lossless and Lossless
-Huffman Encoding - definition and calculations & explanations
+**ASCII encoding** - To and from 
+File **size** calculation (Text and Audio)
+File **compression**
+**Lossless** and **Lossy**
+**Huffman Encoding**
+- definition and calculations & explanations
+- *need to remember steps*
 
 {% endfolding %}
 
 {% folding cyan, Data Integrity & Security: (12') %}
 
-Parity bit & Byte
-Luhn algorithm 
-Caesar Cypher vs Vigner cypher
-Caesar Cypher vs Vigner cypher Calculations
-RSA encryption
+**Parity bit & byte** - explanation & calculation
+
+**Luhn algorithm**
+- need to **explain** Keyword: **verify credit cards**, on banking...
+- not needed to know steps (will given)
+
+**Caesar Cypher** vs **Vigner cypher**
+- Calculations
+
+**RSA encryption**
 
 {% endfolding %}
 
 {% folding cyan, Computer Systems: (8') %}
 
-CPU
+**CPU**
+- Everything including definition
 FDE steps in each part of FDE
-Execution of processing data
+- Need **each** steps in the **fetch, decode, execute in order**
+- Might random order and questions to **put in order**
+Execution of processing data - go through notes
+Need to know what is stored in each registers
 
 {% endfolding %}
 
-### Section B: *58 marks*
+### Section B: *58 marks* (python coding)
 
 {% folding cyan, Feature Identification: (10') %}
 
+Know all the following features:
 Variables 
 Lists 
 Dictionary 
@@ -68,9 +80,36 @@ Sequencing, Loops and Iteration
 
 {% endfolding %}
 
-- Short Answers: *20 marks*
-- Debugging: *10 marks*
-- Flow-Chart: *10 marks*
-- File and Lists: *8 marks*
+{% folding cyan, Short Answers: (20') %}
+
+Be able to write code based off questions/scenarios 
+
+{% endfolding %}
+
+{% folding cyan, Debugging: (10') %}
+
+**Find** and **correct** error in code
+
+{% endfolding %}
+
+{% folding cyan, Flow-Chart: (10') %}
+
+Write code based of flowchart
+Different **shapes** stands for different functions
+Write Python code for the flowchart. **Indenting**
+
+{% endfolding %}
+
+{% folding cyan, File and Lists: (8') %}
+
+Working with text files
+Need to know Everything that happens with files 
+- create
+- open
+- read
+- display information
+- close
+
+{% endfolding %}
 
 ## Key Points
