@@ -118,9 +118,9 @@ pangu:
   file: dist/browser/pangu.min.js
   version: 4.0.7
 fancybox_css:
-  name: "@fancyapps/ui"
-  file: dist/fancybox/fancybox.css
-  version: 5.0.28
+  name: "dpblog-static"
+  file: fancybox/fancybox.css
+  version: 1.0.5
   other_name: fancyapps-ui
 fancybox:
   name: "@fancyapps/ui"
@@ -158,7 +158,7 @@ aplayer_css:
   # version: 1.0.0
   name: dpblog-static
   file: aplayer/APlayer.min.css
-  version: 1.0.1
+  version: 1.0.6
 aplayer_js:
   name: anzhiyu-blog-static
   file: js/APlayer.min.js

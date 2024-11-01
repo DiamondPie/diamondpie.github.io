@@ -79,6 +79,7 @@ body[data-type="album"] #page .page-title {
 }
 
 #album .card__category {
+  padding-left: 10px;
   color: var(--album-text-light);
   font-size: 0.9rem;
   margin-bottom: var(--album-spacing-s);

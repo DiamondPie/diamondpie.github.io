@@ -168,6 +168,12 @@ html.hide-aside .layout > div:first-child {
   #body-wrap .layout #page {
     padding: 20px 15px !important;
   }
+  #footer-type-tips {
+    display: none;
+  }
+  .typed-cursor {
+    display: none;
+  }
 }
 /* 首页文章宽度 */
 @media screen and (max-width: 1200px) {

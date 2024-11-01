@@ -1,0 +1,57 @@
+- class_name: 日常生活
+  path_name: /album/daily
+  type: 2
+  description: 希望这里能给你带来欢乐~
+  cover: https://ice.frostsky.com/2024/11/01/2542e0008a01c60093569f8be55fdb15.jpeg
+  top_background: https://ice.frostsky.com/2024/11/01/f7821a04d2750128a1a54f500eb9a549.jpeg
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
+  top_link: /album
+  top_btn_text: 返回
+  album_list:
+    - date: 2024-10-31
+      content: "不是哥们咋成网络男神了 | Shot by Fairy🎉"
+      address: 万圣节🎃
+      from: Fairy
+      image:
+        - https://ice.frostsky.com/2024/11/01/4c166398b16b7be92ece21e9c73d576b.jpeg
+    - date: 2024-10-31
+      content: "愿你的每时每刻都能像糖果一样甜🍬"
+      address: 万圣节🎃
+      from: "???"
+      image:
+        - https://ice.frostsky.com/2024/11/01/2a024df86cc6a8b2f14102c50331baaf.jpeg
+        - https://ice.frostsky.com/2024/11/01/5cdb9da4594331bd59fe35be3b923a09.jpeg
+
+- class_name: '-- 此档案仍未被创建 --'
+  path_name: /album
+  type: 1
+  description: 
+  top_link: /album
+  top_btn_text: 返回
+  # top_background: https://ice.frostsky.com/2024/11/01/fb0494bb7dd8b1fb94a8e9c6db70d404.jpeg
+  cover: https://ice.frostsky.com/2024/11/01/0d2466415d63bbfaa09c931a11fabc91.jpeg
+  album_list:
+
+- class_name: '-- 此档案仍未被创建 --'
+  path_name: /album
+  type: 1
+  description: 
+  top_link: /album
+  top_btn_text: 返回
+  # top_background: https://ice.frostsky.com/2024/11/01/fb0494bb7dd8b1fb94a8e9c6db70d404.jpeg
+  cover: https://ice.frostsky.com/2024/11/01/0d2466415d63bbfaa09c931a11fabc91.jpeg
+  album_list:
+
+- class_name: '-- 此档案仍未被创建 --'
+  path_name: /album
+  type: 1
+  description: 
+  top_link: /album
+  top_btn_text: 返回
+  # top_background: https://ice.frostsky.com/2024/11/01/fb0494bb7dd8b1fb94a8e9c6db70d404.jpeg
+  cover: https://ice.frostsky.com/2024/11/01/0d2466415d63bbfaa09c931a11fabc91.jpeg
+  album_list:
