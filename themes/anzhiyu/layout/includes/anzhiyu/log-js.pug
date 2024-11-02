@@ -5,7 +5,7 @@
 script.
   // 消除控制台打印
   var HoldLog = console.log;
-  //- console.log = function () {};
+  console.log = function () {};
   let now1 = new Date();
   queueMicrotask(() => {
     const Log = function () {

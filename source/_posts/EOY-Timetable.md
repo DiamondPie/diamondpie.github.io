@@ -4,8 +4,7 @@ date: 2024-10-31 14:56:51
 tags: Revision
 categories: 学习笔记
 comments: false
-copyright: false
-copyright_author: 1
+cover: https://ice.frostsky.com/2024/11/01/957575d98a5282973ae874c9fd4ca6b0.jpeg
 ---
 
 ## Timetable
@@ -27,11 +26,11 @@ copyright_author: 1
 <div class='status' subject="cps" target-date="2024-11-08T08:40:00Z"></div>
 
 <script>
-  const currentDate = new Date();
-  const contentElements = document.querySelectorAll(".status");
+  currentDate = new Date();
+  contentElements = document.querySelectorAll(".status");
   contentElements.forEach(contentElement => {
-    const subject = contentElement.getAttribute("subject");
-    const targetDate = new Date(contentElement.getAttribute("target-date"));
+    subject = contentElement.getAttribute("subject");
+    targetDate = new Date(contentElement.getAttribute("target-date"));
     if (currentDate < targetDate) {
       contentElement.innerHTML = `{% checkbox green, 11${subject.toUpperCase()} %}`
     }

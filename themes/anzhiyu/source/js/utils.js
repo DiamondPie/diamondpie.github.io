@@ -921,9 +921,9 @@ const anzhiyu = {
         location.reload();
       }, 1500);
     });
-    anMusicSwitchingBtn.addEventListener("click", () => {
-      anzhiyu.changeMusicList();
-    });
+    // anMusicSwitchingBtn.addEventListener("click", () => {
+    //   anzhiyu.changeMusicList();
+    // });
 
     // 默认加载的歌单
     if (GLOBAL_CONFIG.music_page_default === "custom") {

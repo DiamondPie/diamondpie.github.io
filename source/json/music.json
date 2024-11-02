@@ -159,5 +159,26 @@
         "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.3/On-My-Way/On-My-Way.mp3",
         "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.3/On-My-Way/On-My-Way.jpg",
         "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.3/On-My-Way/On-My-Way.lrc"
+    },
+    {
+        "name": "Down For Life",
+        "artist": "GTR7",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.6/Down-For-Life/Down-For-Life.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.6/Down-For-Life/Down-For-Life.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.6/Down-For-Life/Down-For-Life.lrc"
+    },
+    {
+        "name": "Slow Down",
+        "artist": "Madnap",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.6/Slow-Down/Slow-Down.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.6/Slow-Down/Slow-Down.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.7/Slow-Down/Slow-Down.lrc"
+    },
+    {
+        "name": "Doopravdy",
+        "artist": "???",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.5/Doopravdy/Doopravdy.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.5/Doopravdy/Doopravdy.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.5/Doopravdy/Doopravdy.lrc"
     }
 ]
