@@ -41,13 +41,6 @@ cover: https://ice.frostsky.com/2024/11/01/957575d98a5282973ae874c9fd4ca6b0.jpeg
 <!-- endtimeline -->
 {% endtimeline %}
 
-## Status
-
-<!-- <div class='status' subject="esl" target-date="2024-11-03T15:32:00Z"></div>
-<div class='status' subject="phy" target-date="2024-11-04T12:50:00Z"></div>
-<div class='status' subject="che" target-date="2024-11-05T08:40:00Z"></div>
-<div class='status' subject="cps" target-date="2024-11-08T08:40:00Z"></div> -->
-
 <script>
   function loop() {
     currentDate = new Date().getTime();
