@@ -15,7 +15,7 @@ copyright_author: 1
 
 ### Section A: *60 marks*
 
-{% folding cyan, Binary Numbers: (15') %}
+{% folding cyan open, Binary Numbers: (15') %}
 
 **Calculating** binary from expressions
 **Unsigned** VS **2’s complement**
@@ -25,7 +25,7 @@ Decimals to Binary **conversion** (bit dependant)
 
 {% endfolding %}
 
-{% folding cyan, Encoding & Compression: (25') %}
+{% folding cyan open, Encoding & Compression: (25') %}
 
 **ASCII encoding** - To and from 
 File **size** calculation (Text and Audio)
@@ -37,7 +37,7 @@ File **compression**
 
 {% endfolding %}
 
-{% folding cyan, Data Integrity & Security: (12') %}
+{% folding cyan open, Data Integrity & Security: (12') %}
 
 **Parity bit & byte** - explanation & calculation
 
@@ -52,7 +52,7 @@ File **compression**
 
 {% endfolding %}
 
-{% folding cyan, Computer Systems: (8') %}
+{% folding cyan open, Computer Systems: (8') %}
 
 **CPU**
 - Everything including definition
@@ -66,7 +66,7 @@ Need to know what is stored in each registers
 
 ### Section B: *58 marks* (python coding)
 
-{% folding cyan, Feature Identification: (10') %}
+{% folding cyan open, Feature Identification: (10') %}
 
 Know all the following features:
 Variables 
@@ -80,19 +80,19 @@ Sequencing, Loops and Iteration
 
 {% endfolding %}
 
-{% folding cyan, Short Answers: (20') %}
+{% folding cyan open, Short Answers: (20') %}
 
 Be able to write code based off questions/scenarios 
 
 {% endfolding %}
 
-{% folding cyan, Debugging: (10') %}
+{% folding cyan open, Debugging: (10') %}
 
 **Find** and **correct** error in code
 
 {% endfolding %}
 
-{% folding cyan, Flow-Chart: (10') %}
+{% folding cyan open, Flow-Chart: (10') %}
 
 Write code based of flowchart
 Different **shapes** stands for different functions
@@ -100,7 +100,7 @@ Write Python code for the flowchart. **Indenting**
 
 {% endfolding %}
 
-{% folding cyan, File and Lists: (8') %}
+{% folding cyan open, File and Lists: (8') %}
 
 Working with text files
 Need to know Everything that happens with files 
