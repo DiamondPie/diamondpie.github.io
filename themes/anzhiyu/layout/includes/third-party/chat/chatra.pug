@@ -20,7 +20,12 @@ script.
       }
     
       window.chatBtnFn = () => {
-        const isShow = document.getElementById('chatra').classList.contains('chatra--expanded')
+        const chatra = document.getElementById('chatra')
+        if (chatra === null) {
+          anzhiyu.snackbarShow('我们未能找到聊天框容器... 可能您的 adblock 类插件屏蔽了他们',null,3000)
+          return
+        }
+        const isShow = chatra.classList.contains('chatra--expanded')
         isShow ? close() : open()
       }
     } else if (isChatHideShow) {
