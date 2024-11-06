@@ -28,7 +28,7 @@ nav:
     - title: 网页
       item:
         - name: 博客
-          link: https://diamondpie.github.io/
+          link: https://dp.upp.pw/
           icon: /img/favicon.ico
     - title: 项目
       item:
@@ -451,6 +451,9 @@ footer:
       - link: https://docs.anheyu.com/
         shields: https://img.shields.io/badge/Theme-AnZhiYu-2C56A3
         message: 本站使用AnZhiYu主题
+      - link: https://dns.chiyuyu.ink/
+        shields: https://img.shields.io/badge/Domain-池鱼二级域名-40AD2F
+        message: 本站的域名由池鱼二级域名提供
       - link: https://github.com/DiamondPie/diamondpie.github.io/
         shields: https://img.shields.io/badge/Source-Github-C92BCE
         message: 所有源码（包括配置）已托管到Github

@@ -166,7 +166,7 @@ aplayer_js:
 meting_js:
   name: dpblog-static
   file: meting/Meting2.min.js
-  version: 1.0.2
+  version: 1.0.7
 prismjs_js:
   name: prismjs
   file: prism.js
