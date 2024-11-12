@@ -14,7 +14,7 @@ This website adheres to the principle of **non-essential, no collection**, and i
 
 ## Latest update time
 
-The latest update time of the agreement is: `2024-10-24`
+The latest update time of the agreement is: `2024-11-07`
 
 ## 1. How to collect and use your personal information during the visit
 
