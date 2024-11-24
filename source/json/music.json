@@ -180,5 +180,19 @@
         "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.5/Doopravdy/Doopravdy.mp3",
         "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.5/Doopravdy/Doopravdy.jpg",
         "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.5/Doopravdy/Doopravdy.lrc"
+    },
+    {
+        "name": "Star Eater",
+        "artist": "Daniel Deluxe",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/Star-Eater/Star-Eater.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/Star-Eater/Star-Eater.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/Star-Eater/Star-Eater.lrc"
+    },
+    {
+        "name": "X-GALACTICO (Super Slowed)",
+        "artist": "Glichery",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/X-Galactico/X-Galactico.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/X-Galactico/X-Galactico.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/X-Galactico/X-Galactico.lrc"
     }
 ]
