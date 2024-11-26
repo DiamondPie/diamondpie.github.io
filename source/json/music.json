@@ -194,5 +194,12 @@
         "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/X-Galactico/X-Galactico.mp3",
         "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/X-Galactico/X-Galactico.jpg",
         "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.8/X-Galactico/X-Galactico.lrc"
+    },
+    {
+        "name": "Underground",
+        "artist": "Lindsey Stirling",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.9/Underground/Underground.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.9/Underground/Underground.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.9/Underground/Underground.lrc"
     }
 ]
