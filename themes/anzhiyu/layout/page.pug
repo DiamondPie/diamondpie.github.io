@@ -2,7 +2,7 @@ extends includes/layout.pug
 
 block content
   #page
-    if top_img === false && !page.top_single
+    if top_img === false && !page.top_single && !page.no_title
       h1.page-title= page.title
     case page.type
       when 'tags'

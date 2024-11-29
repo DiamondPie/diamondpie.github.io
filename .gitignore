@@ -6,5 +6,6 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+decrypt_secret.js
 *.bat
 *.py

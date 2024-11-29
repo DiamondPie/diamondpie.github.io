@@ -56,9 +56,9 @@ hexo.extend.tag.register('image', function(args) {
   ret += img(url, alt, style);
   ret += '</div>';
 
-  if (alt.length > 0) {
-    ret += '<span class="image-caption">' + alt + '</span>';
-  }
+  // if (alt.length > 0) {
+  //   ret += '<span class="image-caption">' + alt + '</span>';
+  // }
 
   ret += '</div>';
   return ret;
