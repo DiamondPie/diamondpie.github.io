@@ -405,7 +405,7 @@ chat_hide_show: true
 # chatra
 # https://chatra.io/
 chatra:
-  enable: true
+  enable: false
   id: FwfK3YXKRt2qtNk4N
 
 # tidio

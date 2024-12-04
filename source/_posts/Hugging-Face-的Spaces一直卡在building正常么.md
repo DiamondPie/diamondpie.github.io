@@ -3,7 +3,7 @@ title: Hugging Face 的Spaces一直卡在building正常么
 date: 2024-10-21 22:00:03
 updated: 2024-10-22 18:22:00
 tags: Blog
-cover: https://raw.githubusercontent.com/DiamondPie/SomeSortOfResources/refs/heads/main/blog/covers/20241021_1.png
+cover: https://s2.loli.net/2024/12/04/5MlAzCOdurEbhGs.png
 categories: 项目开发
 ---
 今天打算使用**Hugging Face**部署个评论系统，可是我刚提的Space一直卡在**building**状态，这正常嘛？

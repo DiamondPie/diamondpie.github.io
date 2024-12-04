@@ -4,7 +4,7 @@ date: 2024-10-30 09:13:15
 tags: [11CPS, Revision]
 categories: 学习笔记
 comments: false
-cover: https://i.postimg.cc/nhjJqTsk/MCert-CPS-sites-banner.png
+cover: https://s2.loli.net/2024/12/04/CypevSRqk1iD9rh.png
 copyright: false
 copyright_author: 1
 ---

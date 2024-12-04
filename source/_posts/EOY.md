@@ -4,7 +4,7 @@ date: 2024-10-31 14:56:51
 tags: Revision
 categories: 学习笔记
 aside: false
-cover: https://ice.frostsky.com/2024/11/01/957575d98a5282973ae874c9fd4ca6b0.jpeg
+cover: https://s2.loli.net/2024/12/04/xOsiEcVCpXk3UZa.jpg
 ---
 
 {% tip info %}这是一个高级页面，由 {% label Javascript %} 实时控制，请确保您的电脑时钟准确。{% endtip %}
