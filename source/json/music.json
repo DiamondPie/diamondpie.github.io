@@ -201,5 +201,26 @@
         "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.9/Underground/Underground.mp3",
         "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.9/Underground/Underground.jpg",
         "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.0.9/Underground/Underground.lrc"
+    },
+    {
+        "name": "Golden Hour",
+        "artist": "JVKE",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.0/Golden-Hour/Golden-Hour.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.0/Golden-Hour/Golden-Hour.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.2/Golden-Hour/Golden-Hour.lrc"
+    },
+    {
+        "name": "Normal No More",
+        "artist": "TYSM",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.0/Normal-No-More/Normal-No-More.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.0/Normal-No-More/Normal-No-More.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.2/Normal-No-More/Normal-No-More.lrc"
+    },
+    {
+        "name": "Try",
+        "artist": "Colbie Caillat",
+        "url": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.0/Try/Try.mp3",
+        "cover": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.0/Try/Try.jpg",
+        "lrc": "https://cdn.jsdelivr.net/npm/dpblog-music@1.1.2/Try/Try.lrc"
     }
 ]
