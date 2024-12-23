@@ -1,4 +1,7 @@
 menu:
+  圣诞树:
+    去看看: javascript:toChristmas() || anzhiyu-icon-paper-plane
+
   文章:
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
@@ -1194,6 +1197,13 @@ greetingBox:
     # - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
     #   startTime: 20
     #   endTime: 24
+
+# 节日欢迎语配置
+greetingSpecial:
+  enable: true
+  list:
+    12,24: 🎄圣诞快乐~
+    12,25: 🎄圣诞快乐~
 
 # 文章顶部ai摘要
 post_head_ai_description:

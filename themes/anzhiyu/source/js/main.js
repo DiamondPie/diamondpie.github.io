@@ -1510,6 +1510,43 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 500);
     }, 3000);
   }
+  // 特殊节日自定义欢迎语
+  function greetingSpecial() {
+    const greetingBoxInfo = GLOBAL_CONFIG.greetingSpecial.list;
+    //- 创建盒子
+    let div = document.createElement("div");
+    //- 设置ID
+    div.id = "greeting";
+    //- 设置class
+    setTimeout(() => {
+      div.classList.add("shown");
+    }, 1000);
+    //- 插入盒子
+    let greetingBox = document.getElementById("greetingBox");
+    if (!greetingBox) return;
+    greetingBox.appendChild(div);
+    const nowObject = new Date();
+    const nowDate = `${nowObject.getMonth()+1},${nowObject.getDate()}`;
+    // let greetings = greetingBoxDefault;
+
+    // for (let i = 0; i < greetingBoxInfo.length; i++) {
+    //   if (nowTime >= greetingBoxInfo[i].startTime && nowTime <= greetingBoxInfo[i].endTime) {
+    //     greetings = greetingBoxInfo[i].greeting;
+    //     break;
+    //   }
+    // }
+    if (greetingBoxInfo[nowDate] === undefined) {
+      greetingBox.remove();
+      return;
+    }
+    div.innerHTML = greetingBoxInfo[nowDate];
+    setTimeout(() => {
+      div.classList.remove("shown");
+      setTimeout(() => {
+        greetingBox.remove();
+      }, 500);
+    }, 3000);
+  }
   function statistics51aInit() {
     const loadScript = (url, charset = "UTF-8", crossorigin, id) => {
       return new Promise((resolve, reject) => {
@@ -1721,6 +1758,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // 欢迎语
     GLOBAL_CONFIG.greetingBox && greetingInit();
+    GLOBAL_CONFIG.greetingSpecial && greetingSpecial();
     // 51la统计&灵雀统计
     GLOBAL_CONFIG.LA51 && statistics51aInit();
   };
@@ -1811,3 +1849,10 @@ document.addEventListener("DOMContentLoaded", function () {
   refreshFn();
   unRefreshFn();
 });
+
+function toChristmas() {
+  anzhiyu.snackbarShow("正在前往圣诞树页面...");
+  setTimeout(() => {
+    window.location.href = "https://diamondpie.is-best.net/christmas/";
+  }, 2000)
+}

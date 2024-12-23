@@ -9,3 +9,4 @@ _multiconfig.yml
 decrypt_secret.js
 *.bat
 *.py
+source/secret/

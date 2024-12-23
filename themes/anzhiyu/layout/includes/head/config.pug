@@ -131,6 +131,11 @@
     greetingBox = JSON.stringify(theme.greetingBox)
   }
 
+  let greetingSpecial = 'undefined'
+  if (theme.greetingSpecial && theme.greetingSpecial.enable) {
+    greetingSpecial = JSON.stringify(theme.greetingSpecial)
+  }
+
   let LA51 = 'undefined'
   if (theme.LA && theme.LA.enable) {
     LA51 = JSON.stringify(theme.LA)
@@ -174,6 +179,7 @@ script.
     diytitle: !{diytitle},
     LA51: !{LA51},
     greetingBox: !{greetingBox},
+    greetingSpecial: !{greetingSpecial},
     twikooEnvId: '!{theme.twikoo.envId}',
     commentBarrageConfig:!{commentBarrageConfig},
     music_page_default: !{music_page_default},
