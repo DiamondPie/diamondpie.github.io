@@ -1849,10 +1849,3 @@ document.addEventListener("DOMContentLoaded", function () {
   refreshFn();
   unRefreshFn();
 });
-
-function toChristmas() {
-  anzhiyu.snackbarShow("正在前往圣诞树页面...");
-  setTimeout(() => {
-    window.location.href = "https://diamondpie.is-best.net/christmas/";
-  }, 2000)
-}

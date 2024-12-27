@@ -1,7 +1,4 @@
 menu:
-  圣诞树:
-    去看看: javascript:toChristmas() || anzhiyu-icon-paper-plane
-
   文章:
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
