@@ -8,7 +8,7 @@ aside: false
 
 [中文](/privacy/) | `English`
 
-This website attaches great importance to the privacy and personal information protection of users. Through the "Privacy Policy", we will explain to you how to collect, use, save, share and transfer this information when you visit the `dp.upp.pw` website.
+This website attaches great importance to the privacy and personal information protection of users. Through the "Privacy Policy", we will explain to you how to collect, use, save, share and transfer this information when you visit the `dp.itx.pw` website.
 
 This website adheres to the principle of **non-essential, no collection**, and is proud to protect the privacy of users.
 
