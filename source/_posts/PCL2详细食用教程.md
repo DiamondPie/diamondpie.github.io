@@ -1,6 +1,7 @@
 ---
 title: PCL2详细食用教程
 date: 2025-05-16 20:46:13
+updated: 2025-05-17 16:30:00
 tags: [Tutorial, Game]
 cover: https://s2.loli.net/2025/05/16/yERZihWvSUfHPlF.png
 ---
@@ -47,6 +48,46 @@ Hi! 此教程将会从零开始，指导您安装PCL2并进行游玩
 在新的页面中，点击**普通下载**，以获得最快的下载速度
 
 {% note info simple %}如果出现提示“系统发现您的网络异常，需要验证后下载文件”，不用担心，点击验证按钮后即可开始下载{% endnote %}
+
+---
+
+更新：在下载时，浏览器大概率会报毒，类似如下截图：
+
+![](https://s2.loli.net/2025/05/17/i5I9M4V1ZPvEO7B.png)
+
+{% note success simple %}声明：此程序绝对是无毒的，我本人从小学6年级用到现在，期间换了三台电脑，没有任何的病毒入侵的迹象<br>为避免不必要的误会，此处提供的 PCL2 下载链接是**启动器作者**，而非我本人提供的。因此我不会（也无法）往里边夹带私货，请放心😟{% endnote %}
+
+{% folding , 为何会报毒 + 文件校验 %}
+
+**为何会报毒**
+
+为了防止软件本身被破解 / 倒卖，开发者为这个应用程序加入了一种防护（加壳）
+
+它可以极大增加破解难度，但副作用就是**杀毒软件也难以识别其内容**，从而直接将其判定为病毒
+
+![](https://s2.loli.net/2025/05/17/x4tNgrJnoPvYhb8.png)
+
+你可以在 [这里](https://github.com/Hex-Dragon/PCL2/issues/56) 找到原 Issue
+
+**文件校验信息**
+
+对于最新版本 (`v2.10.0`) 解压后`Plain Craft Launcher 2.exe`的 SHA256 校验和为：
+
+```
+4E91D45E3E4EA53FC5CFFA17257B8BEB90BC75FB0AF112C5B0006A4A9B8B8F6E
+```
+
+[此处](https://opentip.kaspersky.com/4E91D45E3E4EA53FC5CFFA17257B8BEB90BC75FB0AF112C5B0006A4A9B8B8F6E/results) 提供卡巴斯基的**动态分析**结果，[动态分析](https://en.wikipedia.org/wiki/Dynamic_program_analysis) 是杀毒软件的另一种分析方式，可以理解为将程序放在一个单独的电脑中去执行，然后检测其会不会出现危害电脑的行为
+
+![](https://s2.loli.net/2025/05/17/uNthp9RwOCFXWU3.png)
+
+{% endfolding %}
+
+根据下图指示即可下载被拦截的文件：
+
+![](https://s2.loli.net/2025/05/17/6dPF9ZVTqExmn2X.png)
+
+![](https://s2.loli.net/2025/05/17/yArERbfFquwzM8a.png)
 
 # PART 2. 安装
 
