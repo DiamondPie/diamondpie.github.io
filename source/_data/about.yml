@@ -45,8 +45,8 @@
   map:
     title: 我当前坐标位于：
     StrengthenTitle: 地球
-    background: /img/about/earth.jpg
-    backgroundDark: /img/about/earth.jpg
+    background: /img/about/earth.webp
+    backgroundDark: /img/about/earth.webp
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 2008
@@ -58,7 +58,7 @@
     author_name: 探险家
     personality_type: ISFP-T
     personality_type_color: "#E4AE3A"
-    photo_url: /img/about/developing.jpg
+    photo_url: /img/about/developing.webp
     personality_img: https://www.16personalities.com/static/images/personality-types/avatars/isfp-adventurer-male.svg
     name_url: https://www.16personalities.com/ch/isfp-%E4%BA%BA%E6%A0%BC
   maxim:
@@ -73,7 +73,7 @@
     game_tips: 陪了我8年的游戏
     game_title: Minecraft
     game_uid: 我的正版ID：Synchronized1145
-    game_bg: /img/about/minecraft_cover.jpg
+    game_bg: /img/about/minecraft_cover.webp
   comic:
     comic_tips: 喜欢的UP主
     comic_title: At Bilibili
@@ -96,12 +96,12 @@
   like:
     like_tips: 关注偏好
     like_title: 网络安全
-    like_bg: /img/about/code.jpg
+    like_bg: /img/about/code.webp
     like_bottom: 网络攻防，CTF，数据安全
   music:
     music_tips: 音乐偏好
     music_title: 英文，战歌，宏伟感歌曲
-    music_bg: /img/about/music.jpg
+    music_bg: /img/about/music.webp
     music_link: /music
   reward_list:
     

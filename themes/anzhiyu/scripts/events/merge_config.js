@@ -36,7 +36,7 @@ hexo.extend.filter.register(
       },
       error_img: {
         flink: "/img/friend_404.gif",
-        post_page: "/img/404.jpg",
+        post_page: "/img/404.webp",
       },
       error_404: {
         enable: true,
