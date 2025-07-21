@@ -24,7 +24,9 @@ aside: false
 
 ### 在访问时，本站内置的第三方服务可能会通过以下或更多途径，来获取你的以下或更多信息：
 
-- **busuanzi 统计**可能会收集你的访问信息（你的访问量等）
+- **vercount 统计**可能会收集你的访问信息（你的访问量等）
+  了解更多关于 [Vercount 统计](https://www.vercount.one/)
+
 - **twikoo 评论**可能会收集你的访问信息（你的评论数等）
 
 ### 在访问时，本人仅会处于以下目的，使用你的个人信息：
@@ -73,7 +75,7 @@ aside: false
 
 **第三方服务**
 
-- busuanzi 统计
+- vercount 统计
 - twikoo 评论
 
 关于如何使用你的 Cookies，请访问 [Cookies 政策](/cookies/)。

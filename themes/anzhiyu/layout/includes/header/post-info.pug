@@ -98,11 +98,11 @@
               i.anzhiyufont.anzhiyu-icon-spinner.anzhiyu-spin
         else if theme.busuanzi.page_pv
           +pvBlock('','post-meta-pv-cv','')
-            span#busuanzi_value_page_pv
+            span#vercount_value_page_pv
               i.anzhiyufont.anzhiyu-icon-spinner.anzhiyu-spin
       else if theme.busuanzi.page_pv
         +pvBlock('','post-meta-pv-cv','')
-          span#busuanzi_value_page_pv
+          span#vercount_value_page_pv
             i.anzhiyufont.anzhiyu-icon-spinner.anzhiyu-spin
       - let location = page.location ? page.location : theme.post_copyright.location
       if theme.post_copyright.enable && location
