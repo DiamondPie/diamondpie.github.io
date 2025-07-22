@@ -6,7 +6,7 @@ tags: [Tutorial, Game]
 cover: https://s2.loli.net/2025/05/16/yERZihWvSUfHPlF.png
 ---
 
-> “自从有了PCL2，我再也没有玩过网易我的世界” —— 匿名玩家
+> “自从有了PCL2，我再也没有玩过网易我的世界”
 
 Hi! 此教程将会从零开始，指导您安装PCL2并进行游玩
 
