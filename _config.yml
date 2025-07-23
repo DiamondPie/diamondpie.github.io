@@ -14,11 +14,16 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://blog.diamondpie.online
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Permalink
+abbrlink:
+  alg: crc32  # 可选：crc32 或 md5
+  rep: hex    # 可选：dec 或 hex
 
 # Directory
 source_dir: source

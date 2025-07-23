@@ -1,9 +1,12 @@
 ---
 title: PCL2详细食用教程
+tags:
+  - Tutorial
+  - Game
+cover: 'https://s2.loli.net/2025/05/16/yERZihWvSUfHPlF.png'
+abbrlink: a2060deb
 date: 2025-05-16 20:46:13
 updated: 2025-05-17 16:30:00
-tags: [Tutorial, Game]
-cover: https://s2.loli.net/2025/05/16/yERZihWvSUfHPlF.png
 ---
 
 > “自从有了PCL2，我再也没有玩过网易我的世界”

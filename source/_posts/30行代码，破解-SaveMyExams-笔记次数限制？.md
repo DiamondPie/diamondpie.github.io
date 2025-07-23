@@ -1,9 +1,10 @@
 ---
 title: 30行代码，破解 SaveMyExams 笔记次数限制？
-date: 2025-07-20 18:36:23
 tags: Hacking
 categories: 项目开发
-cover: https://s2.loli.net/2025/07/21/RWkQhrbdOwKXT9f.webp
+cover: 'https://s2.loli.net/2025/07/21/RWkQhrbdOwKXT9f.webp'
+abbrlink: de8b9337
+date: 2025-07-20 18:36:23
 ---
 
 ## 引子 - 万恶之源

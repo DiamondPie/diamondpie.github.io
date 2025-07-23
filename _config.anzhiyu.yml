@@ -503,22 +503,22 @@ footer:
     enable: true
     randomFriends: 3
     project:
-      # - title: 服务
-      #   links:
-      #     - title: 51la统计
-      #       link: https://v6.51.la/
-      #     - title: 十年之约
-      #       link: https://www.foreverblog.cn/
-      #     - title: 开往
-      #       link: https://github.com/travellings-link/travellings
-      # - title: 主题
-      #   links:
-      #     - title: 文档
-      #       link: /docs/
-      #     - title: 源码
-      #       link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-      #     - title: 更新日志
-      #       link: /update/
+      - title: 服务
+        links:
+          - title: Cloudflare
+            link: https://www.cloudflare.com/
+          - title: Github Pages
+            link: https://pages.github.com/
+          - title: SMMS 图床
+            link: https://sm.ms/
+      - title: 主题
+        links:
+          - title: 文档
+            link: https://docs.anheyu.com/
+          - title: 源码
+            link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+          - title: 更新日志
+            link: https://blog.anheyu.com/update/
       # - title: 导航
       #   links:
       #     - title: 即刻短文
@@ -780,8 +780,8 @@ subtitle:
   effect: true
   # Effect Speed Options (打字效果速度参数)
   startDelay: 300 # time before typing starts in milliseconds
-  typeSpeed: 150 # type speed in milliseconds
-  backSpeed: 50 # backspacing speed in milliseconds
+  typeSpeed: 100 # type speed in milliseconds
+  backSpeed: 30 # backspacing speed in milliseconds
   # loop (循环打字)
   loop: true
   # source 调用第三方服务
@@ -794,7 +794,7 @@ subtitle:
   # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
     - "失败不算苦涩，万物皆有终期"
-    - "Everything has its end"
+    - "No sorrow in falling — Even stars burn out."
 
 # Loading Animation (加载动画)
 preloader:
@@ -1067,7 +1067,7 @@ home_top:
   timemode: date #date/updated
   title: 人生苦短，
   subTitle: 我学Python
-  siteText: The Lost Diamond Pie
+  siteText: 但别的也懂一点~
   category:
     - name: 项目开发
       path: /categories/项目开发/
