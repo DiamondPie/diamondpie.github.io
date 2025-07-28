@@ -304,7 +304,7 @@ noticeOutdate:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: facebook,twitter,wechat,qq
 
 # AddToAny
@@ -336,7 +336,7 @@ valine:
   avatar: mp # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: # valine comment input placeholder (like: Please leave your footprints)
-  guest_info: nick,mail,link # valine comment header info (nick/mail/link)
+  guest_info: nick,mail # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: /img/comment_bg.png # valine background
@@ -433,7 +433,7 @@ footer:
   owner:
     enable: true
     since: 2024
-  custom_text: 我不到啊qwq
+  custom_text: 我不到啊 qwq
   runtime:
     enable: true
     launch_time: 10/20/2024 00:00:00 # 网站上线时间
@@ -447,19 +447,19 @@ footer:
     enable: true
     list:
       - link: https://hexo.io/ #徽标指向网站链接
-        shields: https://img.shields.io/badge/Frame-Hexo-0C679B #徽标API
+        shields: https://custom-icon-badges.demolab.com/badge/Frame-Hexo-0C679B.svg?logo=hexo&logoColor=white #徽标API
         message: 博客框架为Hexo_v5.4.0 #徽标提示语
       - link: https://docs.anheyu.com/
-        shields: https://img.shields.io/badge/Theme-AnZhiYu-2C56A3
+        shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
         message: 本站使用AnZhiYu主题
       - link: https://cloudflare.com/
-        shields: https://img.shields.io/badge/Domain-Cloudflare-40AD2F
+        shields: https://custom-icon-badges.demolab.com/badge/Domain-Cloudflare-F78100.svg?logo=cloudflare&logoColor=white
         message: 域名由Cloudflare提供DNS解析服务
       - link: https://github.com/DiamondPie/diamondpie.github.io/
-        shields: https://img.shields.io/badge/Source-Github-C92BCE
+        shields: https://custom-icon-badges.demolab.com/badge/Source-Github-C92BCE.svg?logo=github&logoColor=white
         message: 所有源码（包括配置）已托管到Github
       - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
-        shields: https://img.shields.io/badge/Copyright-BY--NC--SA_4.0-CD2E32
+        shields: https://custom-icon-badges.demolab.com/badge/Copyright-BY--NC--SA_4.0-CD2E32.svg?logo=law&logoColor=white
         message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
       # - link: https://www.dogecloud.com/
       #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg

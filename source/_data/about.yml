@@ -3,15 +3,15 @@
   avatarImg: /img/default_avatar.jpg
   avatarSkills:
     left:
-      - 🤖️ 数码科技爱好者
-      - 🔍 分享与热心帮助
-      - 🏠 智能家居小能手
-      - 🔨 设计开发一条龙
+      - 🐍 Python
+      - 🌐 Web前端
+      - 🕷️ 网络爬虫
+      - 🔍 逆向工程
     right:
-      - 专修交互与设计 🤝
-      - 脚踏实地行动派 🏃
-      - 团队小组发动机 🧱
-      - 壮汉人狠话不多 💢
+      - 🚩 CTF
+      - 💡 日常问题
+      - 🛠️ 技术钻研
+      - 🤖️ 人工智能
   name: DiamondPie
   description: 是一名 高中生、独立开发者、B站UP主
   aboutsiteTips:
