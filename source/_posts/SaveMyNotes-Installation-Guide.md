@@ -14,6 +14,8 @@ aside: false
 
 <!-- tab 中文 -->
 
+{% note red 'anzhiyufont anzhiyu-icon-bullhorn' simple %}如果您正在使用手机阅读此教程，请切换至电脑以进行安装{% endnote %}
+
 {% note warning simple %}注意：此插件并**没有***破解 VIP*，而仅仅是绕过了 SaveMyExams 复习笔记的查看次数限制，此网站的其他 VIP 功能（如 Target Test 等）即便安装此插件后也仍然**不可使用**，同时，~~本人也没有能力实现这些功能~~此插件也不会实现这些功能{% endnote %}
 
 1. 安装 Tampermonkey
@@ -24,19 +26,19 @@ aside: false
 
     - [Google Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-CN)
 
-      {% folding 如果您使用 Google Chrome 安装此插件 %}
-      
-      出于安全原因，此插件在 Google Chrome 中需要先进行配置才能正常使用
+    {% folding 如果您使用 Google Chrome 安装此插件 %}
+    
+    出于安全原因，此插件在 Google Chrome 中需要先进行配置才能正常使用
 
-      按照图示进行操作即可~
+    按照图示进行操作即可~
 
-      {% image https://s2.loli.net/2025/07/23/hLIUAxmZB3zdkDt.webp %}
+    {% image https://s2.loli.net/2025/07/23/hLIUAxmZB3zdkDt.webp %}
 
-      {% image https://s2.loli.net/2025/07/23/oJux897IYm15QNM.webp %}
-      
-      {% image https://s2.loli.net/2025/07/23/QeGu3cNrZktHI5X.webp %}
+    {% image https://s2.loli.net/2025/07/23/oJux897IYm15QNM.webp %}
+    
+    {% image https://s2.loli.net/2025/07/23/QeGu3cNrZktHI5X.webp %}
 
-      {% endfolding %}
+    {% endfolding %}
 
     - [Firefox](https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/)
 
@@ -49,6 +51,8 @@ aside: false
 <!-- endtab -->
 
 <!-- tab English -->
+
+{% note red 'anzhiyufont anzhiyu-icon-bullhorn' simple %}If you are using your smart phone, please switch to PC or laptop to complete the installation.{% endnote %}
 
 {% note warning simple %}Note: This plugin does **not** *crack VIP*, but only bypasses the viewing limit of SaveMyExams revision notes. Other VIP features (such as Target Test) are still **unusable** even after installing this plugin, and this plugin will not implement these features.{% endnote %}
 
