@@ -5,15 +5,16 @@ cover: 'https://s2.loli.net/2025/07/21/RWkQhrbdOwKXT9f.webp'
 categories: 学习笔记
 abbrlink: 339c3d79
 date: 2025-07-21 11:59:23
+aside: false
 ---
 
-可被用于分享的短链接：[https://rb.gy/53aeld](https://rb.gy/53aeld)
+可能被用于分享的短链接：[https://rb.gy/53aeld](https://rb.gy/53aeld)
 
 {% tabs langs %}
 
 <!-- tab 中文 -->
 
-{% note warning simple %}注意：此插件并**没有***破解 VIP*，而仅仅是绕过了 SaveMyExams 复习笔记的查看次数限制，此网站的其他 VIP 功能（如 Target Test 等）即便安装此插件后也仍然**不可使用**，同时，此插件也不会实现这些功能{% endnote %}
+{% note warning simple %}注意：此插件并**没有***破解 VIP*，而仅仅是绕过了 SaveMyExams 复习笔记的查看次数限制，此网站的其他 VIP 功能（如 Target Test 等）即便安装此插件后也仍然**不可使用**，同时，~~本人也没有能力实现这些功能~~此插件也不会实现这些功能{% endnote %}
 
 1. 安装 Tampermonkey
 
