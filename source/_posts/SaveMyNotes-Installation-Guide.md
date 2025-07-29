@@ -50,6 +50,12 @@ aside: false
 
 {% link SaveMyNotes 用户脚本,By DiamondPie,https://getcie.github.io/savemynotes.user.js %}
 
+3. 在弹出的页面中点击 `安装` 按钮
+
+{% image https://s2.loli.net/2025/07/29/C2q38ftAk76KsjN.webp %} 
+
+4. 尽情查看你的**所有**笔记吧~
+
 <!-- endtab -->
 
 <!-- tab English -->
@@ -87,6 +93,12 @@ aside: false
 2. Make sure Tampermonkey is **installed**, then click on the link below to install it directly.
 
 {% link SaveMyNotes Userscript,By DiamondPie,https://getcie.github.io/savemynotes.user.js %}
+
+3. Click on `Install` button 
+
+{% image https://s2.loli.net/2025/07/29/f7dS5n8IDbu6wAT.webp %} 
+
+4. Enjoy **all** your revision notes!
 
 <!-- endtab -->
 
