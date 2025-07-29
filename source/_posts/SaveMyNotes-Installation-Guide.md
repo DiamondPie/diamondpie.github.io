@@ -1,6 +1,8 @@
 ---
 title: SaveMyNotes Installation Guide
-tags: Tutorial
+tags: 
+  - Tutorial
+  - Tampermonkey
 cover: 'https://s2.loli.net/2025/07/21/RWkQhrbdOwKXT9f.webp'
 categories: 学习笔记
 abbrlink: 339c3d79
