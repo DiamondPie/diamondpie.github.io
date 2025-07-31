@@ -1117,9 +1117,14 @@ console:
 
 # 51a统计配置
 LA:
-  enable: true
-  ck: 3MyZW3N5k0mZmIM5
+  enable: false
+  ck:
   LingQueMonitorID:
+
+# 自部署 Cloudflare 统计API
+cfanalytic:
+  enable: true
+  url: https://analytic.diamondpie.workers.dev/
 
 # 标签卖萌
 diytitle:

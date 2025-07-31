@@ -24,7 +24,7 @@ This website promises that except for your viewing of a certain blog, which will
 
 ### During the visit, the third-party services built into this site may obtain the following or more information from you through the following or more channels:
 
-- **vercount statistics** and **51la statistics** may collect your visit information (your visit volume, etc.)
+- **vercount statistics** may collect your visit information (your visit volume, etc.)
   Check the vercount project [here](https://www.vercount.one/)
 
 - **twikoo comments** may collect your visit information (your number of comments, etc.)
