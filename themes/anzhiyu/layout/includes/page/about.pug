@@ -98,7 +98,7 @@ if site.data.about
               #statistic
               .post-tips
                 | 统计信息来自 
-                a(href='https://invite.51.la/1NzKqTeb?target=V6', target='_blank', rel='noopener nofollow') 51la网站统计
+                a(href='https://developers.cloudflare.com/analytics/graphql-api/', target='_blank', rel='noopener nofollow') Cloudflare API
               .banner-button-group
                 - let link = item.statistic.link
                 - let text = item.statistic.text
@@ -150,7 +150,8 @@ if site.data.about
           .image
             img.no-lightbox(src=url_for(personality_img), alt='人格')
         .author-content-item.myphoto
-          img.author-content-img.no-lightbox(alt='自拍', src=url_for(photo_url))
+          h2(style="z-index: 1; color: #eee") 这是一块赛博电路板
+          img.author-content-img.no-lightbox(alt='电路板', src=url_for(photo_url))
       
       .author-content
         .author-content-item.maxim
@@ -207,7 +208,7 @@ if site.data.about
             .author-content-item-tips=music_tips
             span.author-content-item-title=music_title
             .content-bottom
-              .tips=`“歌单不多，但每首都是极品”`
+              .tips=`嘉豪专用特供版小曲`
             .banner-button-group
               a.banner-button(onclick=`pjax.loadUrl("${music_link}")`)
                 i.anzhiyufont.anzhiyu-icon-arrow-circle-right

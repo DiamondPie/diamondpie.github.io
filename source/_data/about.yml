@@ -13,7 +13,7 @@
       - 🛠️ 技术钻研
       - 🤖️ 人工智能
   name: DiamondPie
-  description: 是一名 高中生、独立开发者、B站UP主
+  description: 是一名 高中生、独立开发者、B站小 UP 主
   aboutsiteTips:
     tips: 追求
     title1: 希望有人
@@ -31,15 +31,15 @@
     tips: 生涯
     title: 无限进步
     list:
-      - desc: 睡不醒
+      - desc: CIE AS Physics
         color: "#357ef5"
-      - desc: 睡不醒
+      - desc: CIE A-LEVEL Maths
         color: "#357ef5"
-      - desc: 睡不醒
+      - desc: CIE AS Computer Science
         color: "#357ef5"
     img: https://s2.loli.net/2025/07/31/4NgHjQuShYvLD6V.png
   statistic:
-    link: /archives
+    link: /archives/
     text: 文章隧道
     cover: https://s2.loli.net/2025/07/31/yfjHxWLZlDiJF3c.webp
   map:
@@ -50,10 +50,10 @@
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 2008
-    selfInfoTips2: 当前坐标
-    selfInfoContent2: 新西兰
+    selfInfoTips2: 当前状态
+    selfInfoContent2: 复习中
     selfInfoTips3: 现在职业
-    selfInfoContent3: 高中生👨‍🦱
+    selfInfoContent3: 高中生
   personalities:
     author_name: 探险家
     personality_type: ISFP-T
@@ -67,12 +67,12 @@
     maxim_bottom: 万物皆有终期。
   buff:
     buff_tips: 特长
-    buff_top: 嗜睡 能从假期开始冬眠到结束
-    buff_bottom: 睡眠质量 雷打不动
+    buff_top: “电脑相关的东西
+    buff_bottom: 和莫名其妙的点子”
   game:
     game_tips: 陪了我8年的游戏
     game_title: Minecraft
-    game_uid: 我的正版ID：Synchronized1145
+    game_uid: 我的正版ID：TryDiamondPie
     game_bg: /img/about/minecraft_cover.webp
   comic:
     comic_tips: 喜欢的UP主
@@ -84,9 +84,9 @@
       - name: 中楠先生胡言乱语
         href: https://space.bilibili.com/35095918
         cover: https://wsrv.nl/?url=i1.hdslb.com/bfs/face/b97afc6cdae1faf09272fe7949ecf940902df4d0.jpg&w=300&h=300&fit=fill
-      - name: 大炒面制造者Cen
-        href: https://space.bilibili.com/14890801
-        cover: https://wsrv.nl/?url=i1.hdslb.com/bfs/face/ddbd161cff620238122005fdbe232668c4e964ab.jpg&w=300&h=300&fit=fill
+      - name: 匿名Tian
+        href: https://space.bilibili.com/494650589
+        cover: https://wsrv.nl/?url=i1.hdslb.com/bfs/face/546400889cf92b069d60b33db271eef475e9d5c5.jpg&w=300&h=300&fit=fill
       - name: 小陈在农村
         href: https://space.bilibili.com/590842316
         cover: https://wsrv.nl/?url=i2.hdslb.com/bfs/face/2461dc7a505a666d71cc64dd3811b1de6cfe5fea.jpg&w=300&h=300&fit=fill
