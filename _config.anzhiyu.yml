@@ -310,8 +310,8 @@ sharejs:
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: false
-  item: facebook,twitter,wechat,email,copy_link
+  enable: true
+  item: facebook,twitter,wechat,email
 
 # Comments System
 # --------------------------------------
@@ -1117,8 +1117,8 @@ console:
 
 # 51a统计配置
 LA:
-  enable: false
-  ck:
+  enable: true
+  ck: 3MyZW3N5k0mZmIM5
   LingQueMonitorID:
 
 # 标签卖萌

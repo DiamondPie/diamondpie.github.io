@@ -1584,7 +1584,7 @@ document.addEventListener("DOMContentLoaded", function () {
         new LingQue.Monitor().init({ id: GLOBAL_CONFIG.LA51.LingQueMonitorID, sendSuspicious: true });
       })
       .catch(error => {
-        console.error("加载51a统计异常，本地加载403是正常情况:", error);
+        console.error("Warning: Failed to load 51la statistics. A 403 status code is normal in a development environment.", error);
       });
   }
 

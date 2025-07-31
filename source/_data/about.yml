@@ -1,5 +1,5 @@
 - class_name: 关于页
-  subtitle: 🎶 生活不算苦涩，万物皆有终期 🎶
+  subtitle: 🎶 失败不算苦涩，万物皆有终期 🎶
   avatarImg: /img/default_avatar.jpg
   avatarSkills:
     left:
@@ -37,11 +37,11 @@
         color: "#357ef5"
       - desc: 睡不醒
         color: "#357ef5"
-    img: https://bu.dusays.com/2023/04/21/644287166329b.png
+    img: https://s2.loli.net/2025/07/31/4NgHjQuShYvLD6V.png
   statistic:
     link: /archives
     text: 文章隧道
-    cover: https://bu.dusays.com/2023/05/01/644f4b037b930.jpg
+    cover: https://s2.loli.net/2025/07/31/yfjHxWLZlDiJF3c.webp
   map:
     title: 我当前坐标位于：
     StrengthenTitle: 地球
@@ -63,7 +63,7 @@
     name_url: https://www.16personalities.com/ch/isfp-%E4%BA%BA%E6%A0%BC
   maxim:
     maxim_tips: 座右铭
-    maxim_top: 生活不算苦涩，
+    maxim_top: 失败不算苦涩，
     maxim_bottom: 万物皆有终期。
   buff:
     buff_tips: 特长
