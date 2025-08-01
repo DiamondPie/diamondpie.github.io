@@ -93,7 +93,9 @@ if site.data.about
           - let cover = item.statistic.cover
           .about-statistic.author-content-item(style=`background: url(${cover}) top / cover no-repeat;`)
             .card-content
-              .author-content-item-tips 数据
+              .author-content-item-tips
+                | 数据 - 截至 
+                span#since
               span.author-content-item-title 访问统计
               #statistic
               .post-tips
@@ -298,11 +300,14 @@ if site.data.about
                 yesterday_views: "昨日人数",
                 yesterday_requests: "昨日访问",
                 month_views: "本月访问",
-                total_views: "总访问量"
+                cached_bytes: "本月共缓存 / KB"
             }
 
+            data.cached_bytes = Math.round(data.cached_bytes / (1024));
             let statisticEl = document.getElementById("statistic");
             if (!statisticEl) return;
+
+            document.getElementById("since").innerText = `${data.since}`;
             
             // 自定义不显示哪个或者显示哪个，如下为不显示 最近活跃访客 和 总访问量
             let statistic = [];
