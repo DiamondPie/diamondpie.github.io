@@ -1243,7 +1243,7 @@ pageThumbnailSuffix: ""
 # 隐私协议弹窗
 agreementPopup:
   enable: true
-  url: /privacy
+  url: /privacy/
 
 # 右键菜单
 rightClickMenu:
