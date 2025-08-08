@@ -300,10 +300,10 @@ if site.data.about
                 yesterday_views: "昨日人数",
                 yesterday_requests: "昨日访问",
                 month_views: "本月访问",
-                cached_bytes: "本月共缓存 / KB"
+                cached_bytes: "本月共缓存 / MB"
             }
 
-            data.cached_bytes = Math.round(data.cached_bytes / (1024));
+            data.cached_bytes = Math.round(data.cached_bytes / (1024 * 1024));
             let statisticEl = document.getElementById("statistic");
             if (!statisticEl) return;
 
